@@ -1,0 +1,95 @@
+:root {
+    --color-primary: hwb(130 8% 90% / 0.404);
+    --color-secondary: hsl(30, 4%, 11%);
+    --color-tertiary: #C4C4C4;
+    --color-button: hsl(61, 99%, 58%);
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    
+}
+
+.botão1{
+    background-color: #e91822;
+}
+
+.container {
+    display: flex;
+}
+.div1, .div2 {
+    flex: 2;
+}
+
+.input-section {
+    font-size: 20px;
+    font-style:normal;
+    font-family: "Merriweather", serif;
+    flex: 30%;
+    background-color: var(--color-white);
+    border: 10px solid hsl(258, 86%, 34%);
+    border-style: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: row;
+    padding: 20px;
+    width: 100%;
+}
+.div1{
+    background-color: hsl(200, 84%, 88%) ;
+}
+.div2{
+    background-color: hsl(200, 84%, 88%) ;
+}
+
+.res :after{
+    color: #5ce0f1;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+#menu-h{
+    background-color: hsla(60, 6%, 13%, 0.712);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #5ce0f1;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: hsl(0, 20%, 96%);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+

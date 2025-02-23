@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Calculo de Lucro</title>
+</head>
+<body>
+  <main>
+    <header class="banner-cabeca">
+        
+        
+          <nav id="menu-h">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+      
+                <li><a href="precificacao.html">Precificação</a></li>
+                
+                <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true" >Mercado Livre</a></li>
+                
+                <li><a href="https://shopee.com.br/capital_da_oferta_01?categoryId=100636&entryPoint=ShopByPDP&itemId=23693670396">Shopee</a></li>
+                
+                <li><a href="cadastro.html">Entrar</a></li>
+            </ul>
+          </nav>
+         
+        
+          
+    </header>
+         
+         
+    
+      <section class="input-section">
+        
+        <div class="container">
+            
+        
+          <div class="div1">
+            
+            <fieldset>
+                <legend>QUANTO VOCÊ INVESTE?</legend>
+                <p>
+                    <span class="venda">Valor de venda : R$</span>
+                    <input id="preco-venda" type="text" />
+                </p>
+                <p>
+                  <span class="cust">Custo do Produto : R$</span>
+                  <input id="produto" type="text" />
+              </p>
+                <p>
+                    <span class="fret">Frete : R$</span>
+                    <input id="frete" type="text" /> 
+                </p>
+                <p>     
+                    <select name="job" id="job">
+                          <option value="">Qual o marquetplace ?</option>
+                          <option value="Ml">Mercado Livre</option>
+                          <option value="Sh">Shopee</option>
+                    </select>
+                </p>
+                <P>
+                  <button id="botao1">Calcular</button> 
+                    <input type="reset" id="limpar" name="limpar" value="Limpar"/>
+                    
+                </P>
+             
+            </fieldset>
+          </div>
+            <div class="div2">
+            
+                <fieldset>
+                  <legend>VEJA SE LUCROU !</legend>
+                  <p>
+                    <span class="res">O investimento foi de : R$</span>
+                    <input id="resultado1" type="text" />
+                  </p>
+                  <p>
+                    <span class="res">O retorno foi de : R$</span>
+                    <input id="resultado2" type="text" />
+                  </p>
+                  <p>
+                    <span class="res">O lucro foi de : %</span>
+                    <input id="resultado3" type="text" />
+                  </p>
+                  <p>
+                    <span class="res">O lucro líquido é : %</span>
+                    <input id="resultado4" type="text" />
+                  </p>
+                  <p>
+                    <span class="res">A taxa dolado é : %</span>
+                    <input id="resultado5" type="text" />
+                  </p>
+                </fieldset>
+            </div>
+        </div>  
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="calculo_lucro.js"></script>
+</body>
+</html>

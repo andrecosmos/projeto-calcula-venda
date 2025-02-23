@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    
+            <div>
+               <h1 id="titulo">Entre ou Cadastre-se</h1>
+               
+        <br>
+            </div>
+    
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+        <!-- Campo de email com-->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label for="telefone"><strong>Celular</strong></label>
+            <input type="tel" name="telefone" id="telefone" required>
+        </div>
+        <br>
+        <div class="campo">
+            <label for="senha"><strong>Senha</strong></label>
+            <input type="password" name="senha" id="senha" required>
+        </div>
+    </fieldset>
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Em qual Marketplace você vende ?</strong></label>
+            <label>
+                <input type="radio" name="mkp" value="mercado" checked>Mercado Livre
+            </label>
+            <label>
+                <input type="radio" name="mkp" value="shopee">Shopee
+            </label>
+            <label>
+                <input type="radio" name="mkp" value="nenhum">Nenhum
+            </label>
+        </div>
+
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="campo">
+            <label for="Instalações"><strong>Instalações</strong></label>
+            <select id="Instalações" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Online</option>
+              <option>Física</option>
+              <option>Ambas</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+            <div id="check">
+                <label><strong>Quais as mídias que utiliza:</strong></label><br><br>
+                <input type="checkbox" id="midias1" name="midias1" value="Google-Shoping">
+                <label for="midias1">Google</label>
+                <input type="checkbox" id="midias2" name="midias2" value="Facebook">
+                <label for="midias2">Facebook</label>
+                <input type="checkbox" id="midias3" name="midias3" value="Instagram">
+                <label for="midias3">Instagram</label>
+                <input type="checkbox" id="midias4" name="midias4" value="Ecommerce">
+                <label for="midias4">Ecommerce</label>
+                <input type="checkbox" id="midias5" name="midias" value="ADS">
+                <label for="midias5">ADS</label>
+            </div>
+        </fieldset>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="sugestoes"><strong>Deixe seu comentário: </strong></label>
+            <textarea rows="6" style="width: 26em" id="sugestoes" name="sugestoes"></textarea>
+        </div>
+        <br>
+        
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Cadastrar</button>            
+        
+    </form>
+
+    
+
+
+
+
+
+
+
+
+    <script src="cadastro.js" defer></script>
+</body>
+</html>
