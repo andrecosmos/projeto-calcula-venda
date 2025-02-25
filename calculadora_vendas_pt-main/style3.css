@@ -18,10 +18,10 @@
 
 
 fieldset {
-    border: 60;
+    
     background-color: hsla(60, 23%, 97%, 0.576);
-    width: max-content;
-    margin-left: 15%;
+    
+    
     
 }
 
@@ -58,7 +58,7 @@ input, select, textarea, button {
 
 .campo {
     margin-bottom: 1em;
-    margin-left: 15%;
+    
 }
 
 
@@ -71,8 +71,9 @@ input, select, textarea, button {
 
 
 fieldset.grupo .campo {
+    width: 100%;
     float:  left;
-    margin-right: 1em;
+   
     
 }
 
