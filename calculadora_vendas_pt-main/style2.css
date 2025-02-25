@@ -34,7 +34,7 @@ body {
     font-size: 20px;
     font-style:normal;
     font-family: "Merriweather", serif;
-    flex: 30%;
+    
     background-color: var(--color-white);
     border: 10px solid hsl(258, 86%, 34%);
     border-style: 64px 64px 0 0;
