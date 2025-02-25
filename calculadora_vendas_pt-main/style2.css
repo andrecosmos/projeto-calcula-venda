@@ -63,23 +63,25 @@ body {
 
 
 #menu-h{
-    background-color: hsla(60, 6%, 13%, 0.712);
+    display: flexbox;
+    background-color: hwb(60 12% 86% / 0.486);
 }
 
 #menu-h ul {
-    max-width: 800px;
+    display: inline-block;
     list-style: none;
-    padding: 0;
+    
 }
 
 #menu-h ul li {
     display: inline;
+    padding: 10px;
 }
 
 #menu-h ul li a {
     color: #5ce0f1;
-    padding: 20px;
     display: inline-block;
+    padding: 20px;
     text-decoration: none;
     transition: background .4s;
 }
@@ -91,5 +93,6 @@ body {
 #menu-h ul li:last-child a {
     float: right;
     background-color: rgb(24, 139, 233);
+    
 }
 
