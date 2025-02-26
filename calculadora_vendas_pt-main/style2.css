@@ -31,24 +31,32 @@ body {
     font-family: "Merriweather", serif;
     background-color: var(--color-white);
     border: 10px solid hsl(258, 86%, 34%);
-    border-style: 64px 64px 0 0;
+    border-radius: 10px;
     margin: 20px;
     padding: 5px;
+    align-items: center;
 }
 .div1, .div2 {
     flex: 2;
+    
 }
 
 
 .div1{
     background-color: hsl(200, 84%, 88%) ;
+    
 }
 .div2{
     background-color: hsl(200, 84%, 88%) ;
 }
 
-.res :after{
-    color: #5ce0f1;
+.iptu{
+    background-color: #FFFFFF;
+    border: 1px solid hsl(258, 86%, 34%);
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px;
+    
 }
 
 .fieldset{
@@ -56,6 +64,38 @@ body {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    
+}
+
+.cust {
+    font-size: 15px;
+    font-style:normal;
+    font-family: "Merriweather", serif;
+    background-color: hwb(216 95% 3%);
+    border: 1px solid hsl(258, 86%, 34%);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 3px;
+    align-items: center;
+}
+
+.res {
+    font-size: 15px;
+    font-style:normal;
+    font-family: "Merriweather", serif;
+    background-color: hwb(216 95% 3%);
+    border: 1px solid hsl(258, 86%, 34%);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 3px;
+    align-items: center;
+}
+
+.leg1 {
+    font-size: 25px;
+    font-style:normal;
+    font-family: "Merriweather", serif;
+    color: hsl(258, 86%, 34%);
 }
 
 
@@ -65,19 +105,28 @@ body {
 
 
 #menu-h{
-    display: flexbox;
+    display: flex;
     background-color: hwb(60 12% 86% / 0.486);
+    border-radius: 10px;
+    justify-content: center;
+    
 }
 
 #menu-h ul {
-    display: inline-block;
+    display: inline;
     list-style: none;
+    border-radius: 10px;
+    background-color: #5cb3cd;
+    
     
 }
 
 #menu-h ul li {
     display: inline;
     padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    
 }
 
 #menu-h ul li a {
@@ -86,15 +135,21 @@ body {
     padding: 20px;
     text-decoration: none;
     transition: background .4s;
+    border-radius: 10px;
+
+    
 }
 
 #menu-h ul li a:hover {
-    background-color: hsl(0, 20%, 96%);
+    background-color: hwb(64 14% 8%);
+    border-radius: 10px;
 }
 
 #menu-h ul li:last-child a {
     float: right;
-    background-color: rgb(24, 139, 233);
-    
+    background-color: #e5fc1c;
+    color: #444444;
+    border-radius: 10px;
+    gap: 10px;
 }
 
