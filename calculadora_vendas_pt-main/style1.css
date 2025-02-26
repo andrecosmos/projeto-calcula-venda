@@ -21,11 +21,12 @@
 }
 
 body{
+  height: 100vh;
   background-color: #02a1fdb6;
   font-family: 'Roboto', sans-serif;
   color: lighten(black, 40%);
-  line-height: 1.5em;
-  position: relative;
+  
+  
 }
 
 
@@ -37,6 +38,7 @@ img{
 }
 
 #menu-v{
+  display: block;
   background-color: hwb(202 72% 5% / 0.714);
 }
 
