@@ -4,116 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
     
     <title>Cadastre-se</title>
 </head>
 <body>
+ 
+    <header class="header-banner">
+        <nav id="menu-v">
+          <div nav="container">
+             <ul class="menu-v">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="calculo_lucro.html">Cálculo de Lucro</a></li>
+              <li><a href="precificacao.html">Precificação</a></li>
+              <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true">Mercado livre</a></li>
+              <li><a href="https://shopee.com.br/capital_da_oferta_01?categoryId=100636&entryPoint=ShopByPDP&itemId=23693670396">Shopee</a></li>
+              <li><a href="cadastro.html">Entre ou cadastre-se</a></li>
+             </ul>
+          </div>
+        </nav>
+    </header>
+
+        <div class="container">       
+            <div class="box-1">
+                <img src="assets/marketplaces.png"  alt="Imagem representativa de marketplaces">
+            </div>  
+            <div class="box-2">
+                <img src="assets/marketplaces.png"  alt="Imagem representativa de marketplaces">
+            </div>  
+        </div>
+      
+        <h2 class="titulo">Cadastre-se</h2>
+<section class="entrar">
+    
+    <form class="formulario">
+
+        <fieldset class="grupo">
+            
+            <div class="campo">
+                <label for="nome"><strong>Nome :</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome :</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            
+            <div class="campo">
+                <label for="email"><strong>Email :</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="telefone"><strong>Celular :</strong></label>
+                <input type="tel" name="telefone" id="telefone" required>
+            </div>
+            <br>
+            <div class="campo">
+                <label for="senha"><strong>Senha :</strong></label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">             
+            <div class="campo">
+                <label><strong>Em qual Marketplace você vende ?</strong></label>
+                <label>
+                    <input type="radio" name="mkp" value="mercado" checked>Mercado Livre
+                </label>
+                <label>
+                    <input type="radio" name="mkp" value="shopee">Shopee
+                </label>
+                <label>
+                    <input type="radio" name="mkp" value="nenhum">Nenhum
+                </label>
+            </div>
+        </fieldset>    
+        <fieldset class="grupo">
+            
+            <div class="campo">
+                <label for="Instalações"><strong>Instalações :</strong></label>
+                <select id="Instalações" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Online</option>
+                <option>Física</option>
+                <option>Ambas</option>
+                </select>
+            </div>
+
+        </fieldset>
+        <fieldset class="grupo">   
+            <div class="campo">
+                <label><strong>Quais as mídias que utiliza:</strong></label><br><br>
+                <input type="checkbox" id="midias1" name="midias1" value="Google-Shoping">
+                <label for="midias1">Google</label>
+                <input type="checkbox" id="midias2" name="midias2" value="Facebook">
+                <label for="midias2">Facebook</label>
+                <input type="checkbox" id="midias3" name="midias3" value="Instagram">
+                <label for="midias3">Instagram</label>
+                <input type="checkbox" id="midias4" name="midias4" value="Ecommerce">
+                <label for="midias4">Ecommerce</label>
+                <input type="checkbox" id="midias5" name="midias" value="ADS">
+                <label for="midias5">ADS</label>
+            </div>
+        </fieldset>
+        </fieldset> 
+        
+            <div class="campo">
+                
+                <span for="sugestoes"><strong>Deixe seu comentário: </strong></label></br>
+                <textarea rows="6" style="width: 26em" id="sugestoes" name="sugestoes"></textarea>
+            </div>
+            
+        
+        
+            <button class="botao" type="submit" onsubmit="">Cadastrar</button>            
+
+    </form>
+
+    
+    
+    
+</section>
+
+
+<footer>
+    <p>Desenvolvido por: Capital da Oferta</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
     
     
             
-        <!--<div id="menu">
-            <ul>
-             <li><a href="index.html">Home</a></li>
-             <li><a href="calculo_lucro.html">Cálculo de Lucro</a></li>
-             <li><a href="precificacao.html">Precificação</a></li>
-             <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true" >Mercado Livre</a></li>
-             <li><a href="https://shopee.com.br/capital_da_oferta_01?categoryId=100636&entryPoint=ShopByPDP&itemId=23693670396">Shopee</a></li>
-            </ul>
-        </div>
-    
-        
-                        <div >
-                        <h1 id="titulo">Entre ou Cadastre-se</h1>
-                        <br>
-                        </div>
-                            
-                            
-            <form class="formulario">
-
-                <fieldset class="grupo">
-                    
-                    <div class="campo">
-                        <label for="nome"><strong>Nome</strong></label>
-                        <input type="text" name="nome" id="nome" required>
-                    </div>
-
-                    
-                    <div class="campo">
-                        <label for="sobrenome"><strong>Sobrenome</strong></label>
-                        <input type="text" name="sobrenome" id="sobrenome" required>
-                    </div>
-                </fieldset>
-                <fieldset class="grupo">
-                    
-                    <div class="campo">
-                        <label for="email"><strong>Email</strong></label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="campo">
-                        <label for="telefone"><strong>Celular</strong></label>
-                        <input type="tel" name="telefone" id="telefone" required>
-                    </div>
-                    <br>
-                    <div class="campo">
-                        <label for="senha"><strong>Senha</strong></label>
-                        <input type="password" name="senha" id="senha" required>
-                    </div>
-                </fieldset>
-                                
-                    <div class="campo">
-                        <label><strong>Em qual Marketplace você vende ?</strong></label>
-                        <label>
-                            <input type="radio" name="mkp" value="mercado" checked>Mercado Livre
-                        </label>
-                        <label>
-                            <input type="radio" name="mkp" value="shopee">Shopee
-                        </label>
-                        <label>
-                            <input type="radio" name="mkp" value="nenhum">Nenhum
-                        </label>
-                    </div>
-
-                    
-                    <div class="campo">
-                        <label for="Instalações"><strong>Instalações</strong></label>
-                        <select id="Instalações" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option>Online</option>
-                        <option>Física</option>
-                        <option>Ambas</option>
-                        </select>
-                    </div>
-
-                <fieldset class="grupo">
-                    
-                    <div id="check">
-                        <label><strong>Quais as mídias que utiliza:</strong></label><br><br>
-                        <input type="checkbox" id="midias1" name="midias1" value="Google-Shoping">
-                        <label for="midias1">Google</label>
-                        <input type="checkbox" id="midias2" name="midias2" value="Facebook">
-                        <label for="midias2">Facebook</label>
-                        <input type="checkbox" id="midias3" name="midias3" value="Instagram">
-                        <label for="midias3">Instagram</label>
-                        <input type="checkbox" id="midias4" name="midias4" value="Ecommerce">
-                        <label for="midias4">Ecommerce</label>
-                        <input type="checkbox" id="midias5" name="midias" value="ADS">
-                        <label for="midias5">ADS</label>
-                    </div>
-                </fieldset>
-
-                
-                <div class="campo">
-                    <br>
-                    <label for="sugestoes"><strong>Deixe seu comentário: </strong></label>
-                    <textarea rows="6" style="width: 26em" id="sugestoes" name="sugestoes"></textarea>
-                </div>
-                <br>
-                
-                
-                <button class="botao" type="submit" onsubmit="">Cadastrar</button>            
-        
-            </form>-->
-
+        <!--
             <div class="container">
                 <div class="section">
                     <div id="menu">
@@ -226,4 +256,4 @@
     
     <script src="cadastro.js" defer></script>
 </body>
-</html>
+</html>-->
