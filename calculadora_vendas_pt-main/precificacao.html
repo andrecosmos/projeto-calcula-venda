@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style4.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -14,71 +14,60 @@
     
 
     <header class="header-banner">
-        <nav id="menu-v">
-          <div nav="container">
-             <ul class="menu-v">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="calculo_lucro.html">Cálculo de Lucro</a></li>
-              <li><a href="precificacao.html">Precificação</a></li>
-              <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true">Mercado livre</a></li>
-              <li><a href="https://shopee.com.br/capital_da_oferta_01?categoryId=100636&entryPoint=ShopByPDP&itemId=23693670396">Shopee</a></li>
-              <li><a href="cadastro.html">Entre ou cadastre-se</a></li>
-             </ul>
-          </div>
+        <nav id="menu-h">
+            <ul>
+                <li>
+                    <a href="index.html">Home
+                    </a>
+                </li>
+        
+                <li><a href="calculo_lucro.html">Cálculo de Lucro</a></li>
+                
+                <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true">Mercado livre</a></li>
+                
+                <li><a href="https://shopee.com.br/capital_da_oferta_01?categoryId=100636&entryPoint=ShopByPDP&itemId=23693670396">Shopee</a></li>
+                
+                <li><a href="cadastro.html">Entrar</a></li>
+            </ul>
         </nav>
     </header>
 
-        <div class="container">       
-            <div class="box-1">
-                <img src="assets/marketplaces.png"  alt="Imagem representativa de marketplaces">
-            </div>  
-            <div class="box-2">
-                <img src="assets/marketplaces.png"  alt="Imagem representativa de marketplaces">
-            </div>  
-        </div>
-      
-        <h2 class="titulo">Cadastre-se</h2>
-    
-        <section class="input-section">
-            
-                <fieldset>
-                
-                    <span class="marg">Custo do produto R$</span>
-                    <input id="produto" type="text" />
-                
-                
-                
-                    <span class="marg">Margem Desejada %</span>
-                    <input id="margem" type="text" />
-                    <tr><select name="job" id="job">
-                        <option value="">Qual o marquetplace ?</option>
-                        <option value="Ml">Mercado Livre</option>
-                        <option value="Sh">Shopee</option>
-                       </select>
-
-                       <button id="botao1" >Calcular</button>
-                       <input type="reset" id="limpar" name="limpar" value="Limpar"/>
-                       
-                    </tr>
-                </fieldset>
-                
-                
-                    <span class="res">O Custo Total é : R$</span>
-                    <input id="resultado2" type="text" />
-                
         
-                    <span class="res">A Margem é % :</span>
-                    <input id="resultado3" type="text" />
-                
-                
-                    <span class="res">Preço sugerido é : R$</span>
-                    <input id="resultado4" type="text" />
-                
-            
+      
+        
     
-    
+        
             
-        </section>
+        <h2 class="titulo">Calcule o preço Sugerido</h2>
+                
+            <div class="container">
+                <div class="div1">
+                
+                        
+                                <span class="marg">Custo do produto R$</span>
+                                <input id="produto" type="text" />
+                                <span class="marg">Margem Desejada %</span>
+                                <input id="margem" type="text" />
+                                <span class="marg">Qual o Marketplace ?</span>
+                                <select name="job" id="job">
+                                        <option value="">Escolha</option>
+                                        <option value="Ml">Mercado Livre</option>
+                                        <option value="Sh">Shopee</option>
+                                </select>
+                        
+                </div>
+                <div class="div2">
+                    <p id="resultado2"></p>
+                    <p id="resultado3"></p>
+                    <p id="resultado4"></p>
+                </div>  
+                <div class="div3">
+                        <button id="botao1" >Calcular</button>
+                        <button id="limpar" name="limpar" value="Limpar">Limpar</button>
+                </div>
+            </div>
+            
+        
         
    
     

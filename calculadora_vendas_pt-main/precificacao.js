@@ -50,10 +50,9 @@ function mercadoLivre(){
                 venda = venda.toFixed(2);
                 porcentagem = porcentagem.toFixed(2);
                 
-
-                resultado2.value = formatCurrency(produto);
-                resultado4.value = formatCurrency(venda);
-                resultado3.value = formatCurrency(porcentagem);
+                document.getElementById('resultado2').innerHTML = `O produto custa:${produto}` ;
+                document.getElementById('resultado4').innerHTML = `O preço Sugerido é :${venda}` ;
+        document.getElementById('resultado3').innerHTML = `Com margem de Lucro de :${porcentagem}` ;
         
 
 }
@@ -69,9 +68,9 @@ function shopee(){
         venda = venda.toFixed(2);
         porcentagem = porcentagem.toFixed(2);
 
-        resultado2.value = formatCurrency(produto);
-        resultado4.value = formatCurrency(venda);
-        resultado3.value = formatCurrency(porcentagem);
+        document.getElementById('resultado2').innerHTML = `O produto custa:${produto}` ;
+        document.getElementById('resultado4').innerHTML = `O preço Sugerido é :${venda}` ;
+        document.getElementById('resultado3').innerHTML = `Com margem de Lucro de :${porcentagem}` ;
 
 
 

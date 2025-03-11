@@ -47,7 +47,7 @@ function mercadoLivre(){
     
     let taxaDolado = fixValue(precoVenda.value) * 0.075;
     taxaDolado = taxaDolado.toFixed(2);
-    resultado5.value = formatCurrency(taxaDolado);
+    
 
     let investimento = fixValue(produto.value) + fixValue(taxaDolado);
     investimento = investimento.toFixed(2);

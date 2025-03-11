@@ -10,84 +10,38 @@
     <title>Home</title>
 </head>
 
-<body>
-       
+<body>   
     
- 
-        <header class="header-banner">
-          <nav id="menu-v">
-            <div nav="container">
-               <ul class="menu-v">
-                <li><a href="calculo_lucro.html">Cálculo de Lucro</a></li>
-                <li><a href="precificacao.html">Precificação</a></li>
-                <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true">Mercado livre</a></li>
-                <li><a href="https://shopee.com.br/capital_da_oferta_01?categoryId=100636&entryPoint=ShopByPDP&itemId=23693670396">Shopee</a></li>
-                <li><a href="cadastro.html">Entre ou cadastre-se</a></li>
-               </ul>
+    
+      <div class="card">
+            <img src="assets/lucro.png">
+            <div>
+              <h1>Calculo de Lucro</h1>
+              <h2>Veja se está Lucrando</h2>
+              <span>R$ $$-- >>>></span>
+              <button><a href="calculo_lucro.html">Calculo de Lucro</a></button>
             </div>
-          </nav>
-        </header>
-    
-    
-            
-        <section class="input-section">
-                <h2 class="section-title">Digite os dados da venda</h2>
-                    <form id="vendaPro">
-                        <td>
-                          <tr>QUAL O CUSTO DO PRODUTO?
-                              <input type="number" id="custo" placeholder="custo">
-                          </tr>
-                          <tr>QUAL A MARGEM DESEJADA?
-                            <input type="number" id="margemDesejada" placeholder="margemDesejada">
-                          </tr>
-                          <tr><select name="tipo" id="tipo">
-                            <option value="">Qual o tipo de venda ?</option>
-                            <option value="Classico">Clássico</option>
-                            <option value="Preminum">Preminum</option>
-                              </select>
-                          </tr>
-                          <tr><select name="job" id="job">
-                            <option value="">Qual o marquetplace ?</option>
-                            <option value="Ml">Mercado Livre</option>
-                            <option value="Sh">Shopee</option>
-                           </select>
-                          </tr>
-                          <tr>
-                             <input onclick="calculaPreco()" type="submit" id="Calcular" placeholder="Calcular">
-                            <input type="reset" id="limpar" name="limpar" value="Limpar"/>
-                          </tr>
-
-                        </td>
-                    </form>
-                    
-            </section>
-       
-        <section class="input-section">    
-
-               <h1>
-                    <table>
-                
-                        <td id="1">
-                          <tr id="tr1"></tr>
-                          <tr id="tr2"></tr>
-                          <tr id="tr3"></tr>
-                          <tr id="tr4"></tr>
-                          <tr id="tr5"></tr>
-                          <tr id="tr6"></tr>
-                          <tr id="tr7"></tr>
-                          <tr id="tr8"></tr>
-                          <tr id="tr9"></tr>
-                          <tr id="tr10"></tr>
-                          <tr id="tr11"></tr>
-                          <tr id="tr12"></tr>
-                        </td>
-
-                    </table>
-                </h1>
-            
-        </section>
-            
-    
+          </div>
+        
+          <div class="card">
+            <img src="assets/preci.png">
+            <div>
+              <h1>Precificação</h1>
+              <h2>Precifique corretamente</h2>
+              <span>R$ + + $$</span>
+              <button><a href="precificacao.html">Precificação</a></button>
+            </div>
+          </div>
+        
+          <div class="card">
+            <img src="assets/cadastri.png">
+            <div>
+              <h1>Cadastro</h1>
+              <h2>Faça login</h2>
+              <span>R$ R$ R$</span>
+              <button><a href="cadastro.html">Entrar</a></button>
+            </div>
+      </div>
 
     <script src="tela1.js" defer></script>
 </body>
