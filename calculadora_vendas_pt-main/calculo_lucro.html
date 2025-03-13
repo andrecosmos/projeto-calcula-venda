@@ -11,14 +11,10 @@
     <title>Calculo de Lucro</title>
 </head>
 <body>
-  
-    
-        
-        
           <nav id="menu-h">
             <ul>
                 <li><a href="index.html">Home</a></li>
-      
+
                 <li><a href="precificacao.html">Precificação</a></li>
                 
                 <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true" >Mercado Livre</a></li>
@@ -28,76 +24,61 @@
                 <li><a href="cadastro.html">Entrar</a></li>
             </ul>
           </nav>
-         
-        
+    
           <h2 class="titulo">Veja se esta lucrando !!</h2> 
-    
-         
-         
-   
-      
-        
-        <div class="container">
-          <div class="div1">
-            
-            <fieldset class="fieldset">
-                <legend class="leg1">QUANTO VOCÊ INVESTE ?</legend>
-                <p>
-                    <span class="cust">Valor de venda : R$</span>
-                    <input class="iptu" id="preco-venda" type="text" />
-                </p>
-                <p>
-                  <span class="cust">Custo do Produto : R$</span>
-                  <input class="iptu"  id="produto" type="text" />
-              </p>
-                <p>
-                    <span class="cust">Frete : R$</span>
-                    <input class="iptu"  id="frete" type="text" /> 
-                </p>
-                <p> <span class="cust"> Qual o Marquetplace : </span>    
-                    <select name="job" id="job">
-                          <option value="">Escolha</option>
-                          <option value="Ml">Mercado Livre</option>
-                          <option value="Sh">Shopee</option>
-                    </select>
-                </p>
-                
-             
-            </fieldset>
-                    
-          </div>
-            <div class="div2">
-            
-                <fieldset class="fieldset">
-                  <legend class="leg1">VEJA SE LUCROU !</legend>
+
+          <div class="container">
+            <div class="div1">
+               
+                  <legend class="leg1">QUANTO VOCÊ INVESTE ?</legend>
                   <p>
-                    <span class="res">O investimento foi de : R$</span>
-                    <input class="iptu"  id="resultado1" type="text" />
+                      <span class="cust">Valor de venda : R$</span>
+                      <input class="iptu" id="preco-venda" type="text" />
                   </p>
                   <p>
-                    <span class="res">O retorno foi de : R$</span>
-                    <input class="iptu"  id="resultado2" type="text" />
+                    <span class="cust">Custo do Produto : R$</span>
+                    <input class="iptu"  id="produto" type="text" />
                   </p>
                   <p>
-                    <span class="res">O lucro foi de : %</span>
-                    <input class="iptu"  id="resultado3" type="text" />
+                      <span class="cust">Frete : R$</span>
+                      <input class="iptu"  id="frete" type="text" /> 
                   </p>
-                  <p>
-                    <span class="res">O lucro líquido é : %</span>
-                    <input class="iptu"  id="resultado4" type="text" />
+                  <p> <span class="cust"> Qual o Marquetplace : </span>    
+                      <select name="job" id="job">
+                            <option value="">Escolha</option>
+                            <option value="Ml">Mercado Livre</option>
+                            <option value="Sh">Shopee</option>
+                      </select>
                   </p>
-                 
-                </fieldset>
+                  
             </div>
-            
-        </div>  
-        <div class="container-3">
-            
-          <button id="botao1" >Calcular</button>
-          <button id="limpar" name="limpar" value="Limpar">Limpar</button>
-        </div>
-         
-    
+            <div class="div2">
+                  
+                    <legend class="leg1">VEJA SE LUCROU !</legend>
+                    <p>
+                      <span class="res">O investimento foi de : R$</span>
+                      <input class="iptu"  id="resultado1" type="text" />
+                    </p>
+                    <p>
+                      <span class="res">O retorno foi de : R$</span>
+                      <input class="iptu"  id="resultado2" type="text" />
+                    </p>
+                    <p>
+                      <span class="res">O lucro foi de : %</span>
+                      <input class="iptu"  id="resultado3" type="text" />
+                    </p>
+                    <p>
+                      <span class="res">O lucro líquido é : %</span>
+                      <input class="iptu"  id="resultado4" type="text" />
+                    </p>
+                    
+                  
+            </div>
+          </div>  
+          <div class="container-3">
+            <button id="botao1" >Calcular</button>
+            <button id="limpar" name="limpar" value="Limpar">Limpar</button>
+          </div>
 
     <script src="calculo_lucro.js"></script>
 </body>
