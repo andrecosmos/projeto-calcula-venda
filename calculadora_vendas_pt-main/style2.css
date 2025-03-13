@@ -59,13 +59,14 @@ h2 {
     background-color: #2192FF;
     height: 90%;
     border: none;
-    
     width: 90%;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+    padding: 10px;
   }
 
   button:hover {
@@ -107,17 +108,21 @@ h2 {
 
 #menu-h{
     background-color: hwb(202 72% 5% / 0.714);
-    box-shadow: 4px 4px 12px #aaaa;
+    box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+    padding: 10px;
   }
   
   #menu-h ul {
       max-width: 800px;
       list-style: none;
       padding: 0;
+      box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+      padding: 10px;
   }
   
   #menu-h ul li {
       display: inline;
+      
   }
   
   #menu-h ul li a {
@@ -129,15 +134,17 @@ h2 {
   }
   
   #menu-h ul li a:hover {
-      background-color: rgb(24, 139, 233);
+      background-color: rgb(252, 253, 253);
   }
   
   #menu-h ul li:last-child a {
       float: right;
       background-color: rgb(24, 139, 233);
-  
   }
-  
+  #menu-h ul li:last-child a:hover {
+    float: right;
+    background-color: rgb(253, 253, 253);
+}
 
   @media screen and (max-width: 600px) {
     #menu-h ul {

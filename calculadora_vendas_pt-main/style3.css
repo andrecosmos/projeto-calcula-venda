@@ -58,6 +58,8 @@ h2 {
       max-width: 800px;
       list-style: none;
       padding: 0;
+      box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+    padding: 10px;
   }
   
   #menu-h ul li {
