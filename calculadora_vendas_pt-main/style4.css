@@ -7,6 +7,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: hwb(202 72% 5% / 0.714);
 }
@@ -15,7 +17,7 @@ body {
   box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
   padding: 10px;
 }
-
+ 
 #menu-h ul {
     max-width: 800px;
     list-style: none;
@@ -29,15 +31,20 @@ body {
 }
 
 #menu-h ul li a {
-    
+  background-color: rgb(41, 146, 231);
     padding: 20px;
     display: inline-block;
     text-decoration: none;
     transition: background .4s;
+    box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+    
 }
 
 #menu-h ul li a:hover {
-    background-color: rgb(246, 248, 250);
+    background-color: rgb(247, 251, 255);
+    box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #menu-h ul li:last-child a {
@@ -45,9 +52,9 @@ body {
     background-color: rgb(24, 139, 233);
 
 }
+
 #menu-h ul li:last-child a:hover {
-  float: right;
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(247, 251, 255);
 }
 
 .header-banner{
@@ -58,8 +65,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 250px;
+  
+  width: 97%;
+  height: 350px;
   gap:16px;
   background-color: rgb(147, 198, 240);
   border-radius: 10px;
@@ -71,17 +79,13 @@ body {
 
 button {
   background-color: #2192FF;
-  height: 90%;
-  border: none;
-  
-  width: 90%;
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
-  padding: 10px;
+  padding: 20px;
 }
 
 button:hover {
@@ -93,9 +97,12 @@ button:hover {
 
 .div1{
   display: flex;
+  align-items: center;
+  
   background-color: hsl(210, 100%, 99%);
   width: 100%;
-  border-radius: 12px;
+  height: 100px;
+  border-radius: 10px;
   box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
   padding: 10px;
 }
@@ -106,7 +113,7 @@ button:hover {
   background-color: #87c2f1;
   color: #fff;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
 }
 
@@ -114,19 +121,20 @@ button:hover {
   display: flex;
   align-items: center;
   flex-direction: row;
-  width: 40%;
-  height: 30%;
-  gap: 10px;
+  
+  width: 30%;
+  height: 100px;
   border-radius: 10px;
   background-color: #f3f6f8;
   box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
   padding: 10px;
+  
 }
 
 
 h2 {
   font-size: .9rem;
- 
+  width: 97%;
   color: #2e2c2c;
   display: flex;
   font-size: 1.2rem;

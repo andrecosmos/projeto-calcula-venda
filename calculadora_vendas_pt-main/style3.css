@@ -7,12 +7,15 @@
 
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #ebf1f3;
     
 }
 
 h2 {
     font-size: .9rem;
+    width: 97%;
     color: #2e2c2c;
     display: flex;
     font-size: 1.2rem;
@@ -22,7 +25,8 @@ h2 {
     padding: 10px;
     margin-top: 2px;
     background-color: #fff;
-}
+  
+  }
 
 .container{
     display: flex;
@@ -52,14 +56,15 @@ h2 {
     background-color: hwb(202 72% 5% / 0.714);
     box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
     padding: 10px;
+    
   }
-  
+   
   #menu-h ul {
       max-width: 800px;
       list-style: none;
       padding: 0;
       box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
-    padding: 10px;
+      padding: 10px;
   }
   
   #menu-h ul li {
@@ -73,7 +78,7 @@ h2 {
       text-decoration: none;
       transition: background .4s;
       box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
-      padding: 10px;
+      
   }
   
   #menu-h ul li a:hover {
@@ -93,13 +98,17 @@ h2 {
     background-color: rgb(247, 251, 255);
 }
   
-
+.header-banner{
+    box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+    padding: 10px;
+  }
   
 
 .entrar{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 97%;
     background-color: hwb(202 72% 5% / 0.714);
     padding: 10px;
     border-radius: 10px;
@@ -110,6 +119,7 @@ h2 {
 
 .campo{
     display: flex;
+    flex-direction: row;
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -122,9 +132,11 @@ h2 {
     
 }
 
-
-
-
+#myform{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 input,  button {
     font-family: sans-serif;
     font-size: 1em;
@@ -138,17 +150,7 @@ button, select{
     cursor: pointer;
 }
 
-.area{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(201, 63%, 89%);
-    border-radius: 10px;
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-}
+
 
 
 
@@ -196,7 +198,7 @@ footer{
 
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 879px) {
     #menu-h ul {
         display: flex;
         flex-direction: column;

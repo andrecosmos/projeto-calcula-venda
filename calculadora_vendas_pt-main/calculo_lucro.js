@@ -65,7 +65,7 @@ function mercadoLivre(){
     let lucroPercentual = fixValue(retorno) / fixValue(investimento) * 100;
     lucroPercentual = lucroPercentual.toFixed(2);
     resultado3.value = (lucroPercentual);
-    
+     
 
 
 }
@@ -80,7 +80,7 @@ function shopee(){
     
     let taxaDolado = fixValue(precoVenda.value) * 0.075;
     taxaDolado = taxaDolado.toFixed(2);
-    resultado5.value = formatCurrency(taxaDolado);
+    
 
     let investimento = fixValue(produto.value) + fixValue(taxaDolado);
     investimento = investimento.toFixed(2);

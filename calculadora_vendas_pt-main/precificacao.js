@@ -40,21 +40,18 @@ function fixValue(value){
 
 function mercadoLivre(){
         
-                let produto = fixValue(custo.value);
-                let porcentagem = fixValue(margem.value) / 100;
-                
-                
-                let taxa = 0.24 ;
-                let venda = produto / (1-(taxa) - porcentagem);
-                produto = produto.toFixed(2);
-                venda = venda.toFixed(2);
-                porcentagem = porcentagem.toFixed(2);
-                
-                document.getElementById('resultado2').innerHTML = `O produto custa:${produto}` ;
-                document.getElementById('resultado4').innerHTML = `O preço Sugerido é :${venda}` ;
-        document.getElementById('resultado3').innerHTML = `Com margem de Lucro de :${porcentagem}` ;
+        let produto = fixValue(custo.value);
+        let porcentagem = fixValue(margem.value) / 100;
         
-
+        let taxa = 0.24 ;
+        let venda = produto / (1-(taxa) - porcentagem);
+        produto = produto.toFixed(2);
+        venda = venda.toFixed(2);
+        porcentagem = porcentagem.toFixed(2);
+        
+        document.getElementById('resultado2').innerHTML = `O produto custa:${produto}` ;
+        document.getElementById('resultado3').innerHTML = `Com margem de Lucro de :${porcentagem}` ;
+        document.getElementById('resultado4').innerHTML = `O preço Sugerido é :${venda}` ;
 }
 
 function shopee(){
@@ -69,12 +66,8 @@ function shopee(){
         porcentagem = porcentagem.toFixed(2);
 
         document.getElementById('resultado2').innerHTML = `O produto custa:${produto}` ;
-        document.getElementById('resultado4').innerHTML = `O preço Sugerido é :${venda}` ;
         document.getElementById('resultado3').innerHTML = `Com margem de Lucro de :${porcentagem}` ;
-
-
-
-
+        document.getElementById('resultado4').innerHTML = `O preço Sugerido é :${venda}` ;
 }
 
 

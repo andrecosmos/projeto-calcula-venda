@@ -7,12 +7,15 @@
 
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #ebf1f3;
     
 }
 
 h2 {
   font-size: .9rem;
+  width: 97%;
   color: #2e2c2c;
   display: flex;
   font-size: 1.2rem;
@@ -22,6 +25,7 @@ h2 {
   padding: 10px;
   margin-top: 2px;
   background-color: #fff;
+
 }
  
 
@@ -30,7 +34,7 @@ h2 {
     display: flex;
     
     align-items: center;
-    width: 100%;
+    width: 97%;
     height: 200px;
     gap:16px;
     background-color: hwb(202 72% 5% / 0.714);
@@ -107,45 +111,49 @@ h2 {
 
 
 #menu-h{
-    background-color: hwb(202 72% 5% / 0.714);
+  background-color: hwb(202 72% 5% / 0.714);
+  box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+  padding: 10px;
+}
+ 
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
     box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
     padding: 10px;
-  }
-  
-  #menu-h ul {
-      max-width: 800px;
-      list-style: none;
-      padding: 0;
-      box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
-      padding: 10px;
-  }
-  
-  #menu-h ul li {
-      display: inline;
-      
-  }
-  
-  #menu-h ul li a {
-      
-      padding: 20px;
-      display: inline-block;
-      text-decoration: none;
-      transition: background .4s;
-  }
-  
-  #menu-h ul li a:hover {
-      background-color: rgb(252, 253, 253);
-  }
-  
-  #menu-h ul li:last-child a {
-      float: right;
-      background-color: rgb(24, 139, 233);
-  }
-  #menu-h ul li:last-child a:hover {
-    float: right;
-    background-color: rgb(253, 253, 253);
 }
 
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+  background-color: rgb(41, 146, 231);
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+    
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(247, 251, 255);
+    box-shadow: 8px 8px 12px hsla(0, 2%, 10%, 0.667);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+
+}
+
+#menu-h ul li:last-child a:hover {
+  background-color: rgb(247, 251, 255);
+}
   @media screen and (max-width: 600px) {
     #menu-h ul {
         display: flex;
