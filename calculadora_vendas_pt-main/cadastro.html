@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -14,83 +15,77 @@
 </head>
 <body>
  
-    <header class="header-banner">
-        <nav id="menu-h">
-          <div nav="container">
-             <ul class="menu-v">
-              <li><a href="calculo_lucro.html">Cálculo de Lucro</a></li>
-              <li><a href="precificacao.html">Precificação</a></li>
-              <li><a href="https://shopee.com.br/capital_da_oferta_01?categoryId=100636&entryPoint=ShopByPDP&itemId=23693670396">Shopee</a></li>
-              <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true">Mercado livre</a></li>
-              <li><a href="index.html">Home</a></li>
-             </ul>
-          </div>
-        </nav>
-    </header>
+    <nav id="menu-h"> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculo_lucro.html">Cálculo de Lucro</a></li>
+            <li><a href="precificacao.html">Precificação</a></li>
+            <li><a href="https://shopee.com.br/capital_da_oferta_01?categoryId=100636&entryPoint=ShopByPDP&itemId=23693670396">Shopee</a></li>
+            <li><a href="https://lista.mercadolivre.com.br/_CustId_706690843?item_id=MLB4649605032&category_id=MLB269734&seller_id=706690843&client=recoview-selleritems&recos_listing=true">Mercado livre</a></li>
+        </ul>
+    </nav>
+    
 
+    <main>  
+    <h2>Cadastre-se</h2>
+    <section class="entrar">
         
-      
-        <h2 class="titulo">Cadastre-se</h2>
-        <section class="entrar">
-            <form action="" method="post" id="myform">
-                <div class="campo">
-                    <label for="firstname">
-                        <strong>Nome : </strong></label>
-                        <input type="text" name="firstname" id="name" required>
-                    </label>
-                    <label for="lastname">
-                        <strong>Sobrenome : </strong></label>
-                        <input type="text" name="lastname" id="surname" required>
-                    <label for="mail">
-                            <strong>Email : </strong><br></label>
-                            <input type="email" name="mail" id="mymail" required>
-                    
-                </div>
-                <div class="campo">
-                    <strong>Nascimento: </strong><br></label>
-                    <input type="date" name="birth" id="birthdate" required>
-                    <label for="telefone"><strong>Celular :</strong></label>
-                    <input type="tel" name="telefone" id="telefone" required>
-                    <label for="senha"><strong>Senha :</strong><br></label>
-                    <input type="password" name="senha" id="senha" required>
-                </div>
-                
-                <div class="campo">
-                    <span><strong>Em qual Marketplace você vende ?</strong></span>
-                    
-                    <input type="radio" id="mercado-livre" name="fav_language" value="Mercado Livre">
-                    <label for="mercado-livre">Mercado Livre</label>
-                    <input type="radio" id="shopee" name="fav_language" value="Shopee">
-                    <label for="shopee">Shopee</label>
-                    <input type="radio" id="ambos" name="fav_language" value="Ambos">
-                    <label for="ambos">Ambos</label>
-                </div>
-                <div class="campo">
-                    <span><strong>Quais as mídias que utiliza:</strong></span>
-                    <input type="checkbox" id="google" name="google" value="google">
-                    <label for="Google">Google</label>
-                    <input type="checkbox" id="meta" name="meta" value="meta">
-                    <label for="meta">Meta</label>
-                    <input type="checkbox" id="ecommerce" name="ecommerce" value="ecommerce">
-                    <label for="ecommerce">Ecommerce</label>
-                    <input type="checkbox" id="ads" name="ads" value="ads">
-                    <label for="ads">ADS</label>
-                </div>
-        
+        <form action="" method="post" id="myform" class="form-grid">
+            <div class="dados">
+                <label for="firstname">Nome : </label>
+                <input type="text" name="firstname" id="name" required>
+                <label for="lastname">Sobrenome : </label>
+                <input type="text" name="lastname" id="surname" required>
+                <label for="mail">Email : </label>
+                <input type="email" name="mail" id="mymail" required>
+            </div>
+            <div class="dados">
+                <label><strong>Nascimento: </strong></label>
+                <input type="date" name="birth" id="birthdate" required>
+                <label for="telefone"><strong>Celular :</strong></label>
+                <input type="tel" name="telefone" id="telefone" required>
+                <label for="senha"><strong>Senha :</strong></label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
             
-                <div class="campo">
-                    <button type="submit" id="submitbtn"><strong>Cadastrar</strong></button>
-                </div>
-            </form>
-        </section>
+            <div class="campo">
+                <span><strong>Em qual Marketplace você vende ?</strong></span>
+                
+                <input type="radio" id="mercado-livre" name="fav_language" value="Mercado Livre">
+                <label for="mercado-livre">Mercado Livre</label>
+                <input type="radio" id="shopee" name="fav_language" value="Shopee">
+                <label for="shopee">Shopee</label>
+                <input type="radio" id="ambos" name="fav_language" value="Ambos">
+                <label for="ambos">Ambos</label>
+            </div>
+            <div class="campo">
+                <span><strong>Quais as mídias que utiliza:</strong></span>
+                <input type="checkbox" id="google" name="google" value="google">
+                <label for="Google">Google</label>
+                <input type="checkbox" id="meta" name="meta" value="meta">
+                <label for="meta">Meta</label>
+                <input type="checkbox" id="ecommerce" name="ecommerce" value="ecommerce">
+                <label for="ecommerce">Ecommerce</label>
+                <input type="checkbox" id="ads" name="ads" value="ads">
+                <label for="ads">ADS</label>
+            </div>
+    
+        
+            <div class="dados">
+                <button type="submit" id="submitbtn"><strong>Cadastrar</strong></button>
+                
+                <button type="reset"><strong>Limpar</strong></button>
+            </div>
+        </form>
+    </section>
 
-
-<footer>
-    <p>Todos os direitos reservados</p>
-    <p>Desenvolvido por: ANDRE COSMOS</p>
-    <p>Contato : (11) 971927935</p>
-</footer>
-<script src="cadastro.js"></script>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados</p>
+        <p>Desenvolvido por: ANDRE COSMOS</p>
+        <p>Contato : (11) 971927935</p>
+    </footer>
+        <script src="./js/cadastro.js"></script>
 
 </body>
 </html>

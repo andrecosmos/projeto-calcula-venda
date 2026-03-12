@@ -23,19 +23,20 @@ function formatCurrency(value){
         let fixedValue = fixValue(value);
         let options ={
                 useGrouping: false,
-                ninimumFractionDigits: 2
+                minimumFractionDigits: 2
         }
         let formatter = new Intl.NumberFormat("pt-BR",options);
         return formatter.format(fixedValue);
 }
 
 function fixValue(value){
-        let fixedValue = value.replace(",",".");
-        let floatValue = parseFloat(fixedValue);
-        if(floatValue == NaN){
-                floatValue = 0 ;
-        }
-        return floatValue;
+    let fixedValue = value.replace(",",".");
+    let floatValue = parseFloat(fixedValue);
+    
+    if(isNaN(floatValue)){
+    floatValue = 0;
+    }
+    return floatValue;
 }
 
 function mercadoLivre(){

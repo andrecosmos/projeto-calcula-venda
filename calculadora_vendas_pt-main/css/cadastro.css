@@ -1,0 +1,71 @@
+.entrar{
+    width:70%;
+    max-width:800px;
+    background:hwb(202 72% 5% / 0.714);
+    padding:20px;
+    border-radius:10px;
+    margin-top:15px;
+    box-shadow:2px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* GRID DO FORMULÁRIO */
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+/* BLOCOS DE INPUT */
+
+.dados{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    padding:15px;
+    border-radius:8px;
+    background:white;
+    box-shadow:2px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* CAMPOS DE RADIO E CHECKBOX */
+
+.campo{
+    grid-column:span 2;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+    padding:15px;
+    background:white;
+    border-radius:8px;
+    box-shadow:2px 4px 8px rgba(0,0,0,0.2);
+}
+
+.campo span{
+    width:100%;
+    margin-bottom:5px;
+}
+
+/* BOTÕES */
+
+.form-grid .dados:last-child{
+    grid-column:span 2;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:800px){
+
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+.campo{
+    grid-column:span 1;
+}
+
+}
