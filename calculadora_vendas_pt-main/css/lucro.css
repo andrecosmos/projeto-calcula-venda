@@ -3,7 +3,9 @@ display:flex;
 justify-content: center;
 gap:20px;
 padding:20px;
-width:70%;
+width:min(100%, 1100px); /* modificado: largura fluida com limite máximo */
+max-width:1100px;
+margin-inline:auto;
 background:hwb(202 72% 5% / 0.714);
 border-radius:10px;
 box-shadow:2px 4px 8px rgba(0,0,0,0.2);
@@ -26,7 +28,9 @@ margin-top:10px;
 display:flex;
 gap:10px;
 justify-content:center;
-width:70%;
+width:min(100%, 1100px); /* modificado: alinhado com container principal */
+max-width:1100px;
+margin-inline:auto;
 padding:10px;
 background:hwb(202 72% 5% / 0.714);
 border-radius:10px;
@@ -43,7 +47,12 @@ main{
 
 .container{
 flex-direction:column;
+width:100%; /* modificado: melhor encaixe em telas médias */
 }
 
+.container-4{
+width:100%;
+padding:12px; /* modificado: mantém espaçamento confortável */
+}
 
 }

@@ -3,7 +3,9 @@ display:flex;
 flex-direction:column;
 gap:15px;
 padding:20px;
-width:100%;
+width:min(100%, 1100px); /* modificado: largura fluida com limite máximo */
+max-width:1100px;
+margin-inline:auto;
 background:#93c6f0;
 border-radius:10px;
 box-shadow:2px 4px 8px rgba(0,0,0,0.2);
@@ -50,4 +52,15 @@ flex-direction:column;
 align-items:center;
 }
 
+}
+
+@media(max-width:500px){
+    .div3{
+        flex-direction:column; /* modificado: botões empilhados em telas pequenas */
+        gap:8px;
+    }
+
+    .div3 button{
+        width:100%;
+    }
 }
